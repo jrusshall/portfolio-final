@@ -1,0 +1,172 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #231f20;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    background-color: #231f20;
+    max-width: 1350px;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    position: fixed;
+    clear: both;
+    opacity: 0.8;
+}
+.navbar {
+    width: 300px;
+    height: 60px;
+    margin: 13px 10px;
+    float: right;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #ffc8fa;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-image: url("img/profile.png");
+    margin: 10px;
+    float: left;
+}
+.banner {
+    background-color: #bcbbbb;
+    height: 750px;
+    width: 100%;
+    background-image: url("img/banner.jpg");
+    background-attachment: fixed;
+}
+.banner-text {
+    font-size: 50px;
+    color: #fc7cf0;
+    padding: 100px;
+    text-align: center;
+}
+.about-container {
+    background-color: #bcbbbb;
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.about-content {
+    font-size: 24px;
+    height: 400px;
+    width: 400px;
+    margin: 8%;
+    padding: 20px;
+    float: left;
+}
+.about-img {
+    height: 430px;
+    width: 400px;
+    margin: 8%;
+    float: left;
+    border-radius: 5%;
+    background-image: url("img/about.jpg");
+}
+.portfolio-container {
+    background-color: #231F20;
+    width: 100%;
+    display: inline-block;
+}
+.portfolio-content {
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    padding: 10%;
+    float: left;
+    color: #fff;
+}
+.portfolio-img1 {
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    float: left;
+    background-image: url("img/biscuitbb.jpg");
+}
+.portfolio-img1:hover {
+    opacity: .7;
+}
+.portfolio-img2 {
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    border: 1px solid #fff;
+    background-image: url("img/dirtyprovo.jpg");
+}
+.portfolio-img2:hover {
+    opacity: .7;
+}
+.secret-container {
+    width: 1200px;
+    height: 300px;
+    padding: 20px;
+    display: inline-block;
+    background-color: #231F20;
+}
+.bandcamp {
+    width: 300px;
+    height: 300px;
+    margin: 0px 500px 0px 515px;
+}
+.resume {
+    width: 300px;
+    height: 85px;
+    margin: 80px 500px 0px 510px;
+    padding-top: 40px;
+    border: 1px solid #0A00EE;
+    font-size: 25px;
+    text-align: center;
+}
+.email {
+    width: 505px;
+    height: 250px;
+    margin: 25px 550px 0px 415px;
+    background-image: url("img/emailform.png");
+    border: 1px solid #000000;
+}
+.cushion {
+    background-color: 231f20;
+    height: 23px;
+}
+.footer {
+    padding: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    opacity: 0.7;
+}

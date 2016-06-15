@@ -1,341 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="mySite" lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Jacob Hall</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Animation CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="icon" href="/img/icon.png">
+    <title>JH</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-1.12.3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.jpg">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body class="container">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="glyphicon glyphicon-tree-conifer"></i>
-                </a>
-            </div>
+    <menu-dir></menu-dir>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Jacob Hall</h1>
+            <hr/>
+            <h3 style="color: white">Front-End Developer</h3></div>
+    </div>
+    <a id="about"></a>
+    <div class="about-container">
+        <div class="about-content">
+            <p>Cat ipsum dolor sit amet, give attitude. Attack dog, run away and pretend to be victim knock dish off table head butt cant eat out of my own dish. My left donut is missing, as is my right curl into a furry donut or intrigued by the shower. Caticus cuteicus leave dead animals as gifts meow but put toy mouse in food bowl run out of litter box at full speed , hopped up on catnip.</p>
         </div>
-        <!-- /.container -->
-    </nav>
+        <div class="about-img"></div>
+    </div>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Jacob Hall</h1>
-                        <p class="intro-text">Front-End Developer</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="cushion"></div>
+    <a id="portfolio"></a>
+    <div class="portfolio-container">
+        <div class="portfolio-content">
+            <div class="portfolio-img1"><a href="http://biscuitbabyslc.com"></a></div>
+            <p><strong>biscuit baby</strong></p>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="profPicContainer">
-            <div class="my-av wow bounceIn " data-wow-delay=".2s">
-
-            </div>
+        <div class="portfolio-content">
+            <div class="portfolio-img2"></div>
+            <p><strong>dirty<a ui-sref="bandcamp">^</a>provo</strong></p>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                <p>I'm a MEAN Stack Web Developer who is always willing to learn more, whether it's the newest technologies or the best place to grab tacos at 2 AM when I need a break from coding.</p>
-                <p>I am ready to take on all the tough problems that I face daily and be eager enough to solve them.</p>
-                <p>I'm originally from Arizona, but I am currently living in Utah playing music with friends and starting my career in programming.</p>
-            </div>
-        </div>
-    </section>
+    </div>
+    <div class="cushion"></div>
 
-    <!-- Projects Section -->
-    <section class="content-section text-center">
-        <div class="projects-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Projects</h2>
-                    <!-- <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p> -->
-                    <a href="https://github.com/jrusshall?tab=repositories" class="btn btn-default btn-lg">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <ui-view></ui-view>
 
+    <div class="cushion"></div>
+    <a id="contact"></a>
+    <footer-dir></footer-dir>
 
-    <section class="" id="projects">
-      <div class="col-lg-12 col-sm-12">
-
-
-       </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-
-                <div class="col-sm-6">
-                    <a href="http://devmounta.in/" class="portfolio-box">
-                        <img src="img/dm-companion.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Full Stack App
-                                </div>
-                                <div class="project-name">
-                                    DevMountain Companion
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="http://biscuitbabyslc.com/#/" class="portfolio-box">
-                        <img src="img/biscuit-baby.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    MEAN Stack Website
-                                </div>
-                                <div class="project-name">
-                                    Biscuit Baby
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" >
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center ">
-                    <h2 class="section-heading wow bounceIn">Skills</h2>
-                    <hr class="primary wow bounceIn">
-                </div>
-            </div>
-        </div> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' src="img/icons/angular-color.svg" alt="" />
-                        <h3 class='wow bounceIn '>Angular</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".1s" src="img/icons/css3-color.svg" alt="" />
-                        <h3>CSS</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' data-wow-delay=".2s" src="img/icons/html5-color.svg" alt="" />
-
-                        <h3>HTML</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".3s" src="img/icons/javascript.svg" alt="" />
-                        <h3>Javascript</h3>
-
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' id='express' src="img/icons/express.png" alt="" />
-                        <h3 class='wow bounceIn '>express</h3>
-
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".1s" src="img/icons/firebase.png" alt="" />
-                        <h3>CSS</h3>
-
-                    </div>
-                </div> -->
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' data-wow-delay=".2s" src="img/icons/git.svg" alt="" />
-
-                        <h3>Git</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".3s" src="img/icons/gulp.png" alt="" />
-                        <h3>Gulp</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' src="img/icons/nodejs.png" alt="" />
-                        <h3 class='wow bounceIn '>Node Js</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".1s" src="img/icons/mongodb.png" alt="" />
-                        <h3>Mongo</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' data-wow-delay=".2s" src="img/icons/jquery-icon.png" alt="" />
-
-                        <h3>jQuery</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".3s" src="img/icons/ionic.svg" alt="" />
-                        <h3>ionic</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class='wow bounceIn  icons' data-wow-delay=".2s" src="img/icons/react.png" alt="" />
-
-                        <h3>React</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-
-                        <img class='wow bounceIn  icons' data-wow-delay=".3s" src="img/icons/sass.png" alt="" />
-                        <h3>Sass</h3>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Me</h2>
-                <!-- <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p> -->
-                <p><a href="mailto:jrusshall@gmail.com">jrusshall@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/jacob-hall" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jrusshall" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Jacob_R_H" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <!-- <div id="map"></div> -->
-
-    <!-- Footer -->
-    <!-- <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Jacob Hall 2016</p>
-        </div>
-    </footer> -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="directives/menuDir.js"></script>
+    <script src="directives/footerDir.js"></script>
 </body>
 
 </html>
